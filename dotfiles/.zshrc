@@ -118,10 +118,10 @@ unset POWERLEVEL9K_KUBECONTEXT_SHOW_ON_COMMAND
 source ~/.linuxify
 
 #k8s_aliases
-source ~/.k8s_setup.sh
+#source ~/.k8s_setup.sh
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
 #eval "$(pyenv virtualenv-init -)"
 export PATH=~/.bin:$PATH
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES

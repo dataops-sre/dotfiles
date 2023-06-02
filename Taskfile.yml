@@ -8,15 +8,18 @@ tasks:
     summary:
       Configure dotfiles setup
     cmds:
-      - rsync -rva ./dotfiles/.tmux ~/.tmux/
-      - rsync -rva ./dotfiles/alacritty ~/.config/alacritty/
+      - rsync -rva ./dotfiles/alacritty/ ~/.config/alacritty/
       - cp -r ./dotfiles/.p10k.zsh ~/.p10k.zsh
       - cp -r ./dotfiles/.zshrc ~/.zshrc
       - cp -r ./dotfiles/.linuxify ~/.linuxify
       - rsync -rva ./dotfiles/nvim/ ~/.config/nvim/
-      - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+      - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
+      - |
+        git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions || true
+        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting || true
+        git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting || true
       - |
         #tmux config configuration
-        git clone https://github.com/gpakosz/.tmux.git || true
-        ln -s -f .tmux/.tmux.conf
-        cp .tmux/.tmux.conf.local .
+        git clone https://github.com/gpakosz/.tmux.git ~/.tmux|| true
+        ln -s -f ~/.tmux/.tmux.conf
+        cp ~/.tmux/.tmux.conf.local ~/.tmux.conf.local
