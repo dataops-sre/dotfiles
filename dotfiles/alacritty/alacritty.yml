@@ -1,0 +1,29 @@
+alt_send_esc: false
+font:
+  normal:
+    family: "MesloLGS NF"
+  size: 15.0
+  
+#key_bindings:
+#  - { key: 19,             mods: Command,                       chars: "~"                     }
+#  - { key: 20,             mods: Command,                       chars: "#"                     }
+#  - { key: 21,             mods: Command,                       chars: "{"                     }
+#  #- { key: 22,             mods: Option,                           action: ReceiveChar                   }
+#  - { key: 22,             mods: Command,                       chars: "|"                     }
+#  #  - { key: 22,             mods: Alt,                       action: None, mode: Alt}
+#  - { key: 23,             mods: Command,                       chars: "["                     }
+#  - { key: 24,             mods: Command,                       chars: "}"                     }
+#  - { key: 25,             mods: Command,                       chars: "^"                     }
+#  - { key: 26,             mods: Command,                       chars: "`"                     }
+#  - { key: 27,             mods: Command,                       chars: "]"                     }
+#  - { key: 28,             mods: Command,                       chars: "\\"                    }
+#  - { key: 29,             mods: Command,                       chars: "@"                     }
+# # for ctl-left/right, now become option-left/right see https://github.com/alacritty/alacritty/issues/1408
+#  - { key: Right,          mods: Alt,                       chars: "\x1BF"                 }
+#  
+#  - { key: Left,           mods: Alt,                       chars: "\x1BB"                 }
+
+window:
+  opacity: 0.88
+  decorations: buttonless
+  dynamic_padding: true
