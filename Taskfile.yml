@@ -20,6 +20,6 @@ tasks:
         git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting || true
       - |
         #tmux config configuration
-        git clone https://github.com/gpakosz/.tmux.git ~/.tmux|| true
-        ln -s -f ~/.tmux/.tmux.conf
+        git clone https://github.com/gpakosz/.tmux.git ~/.tmux || true
+        ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
         cp ~/.tmux/.tmux.conf.local ~/.tmux.conf.local

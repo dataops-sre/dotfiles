@@ -91,3 +91,5 @@ brew "katago"
 brew "winetricks"
 cask "wine-crossover"
 cask "utm"
+#polyteia dependency
+brew "direnv"
