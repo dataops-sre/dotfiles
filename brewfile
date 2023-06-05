@@ -95,3 +95,4 @@ cask "utm"
 #polyteia dependency
 brew "direnv"
 cask "1password/tap/1password-cli"
+brew "postgresql"
