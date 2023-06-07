@@ -121,9 +121,14 @@ source ~/.linuxify
 #source ~/.k8s_setup.sh
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-#eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
+#Add pyenv support
+eval "$(pyenv init -)"
+
+#Add direnv support
+eval "$(direnv hook zsh)"
+
 export PATH=~/.bin:$PATH
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 export GODEBUG=asyncpreemptoff=1
 export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+
