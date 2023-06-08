@@ -12,6 +12,9 @@ tasks:
       - cp -r ./dotfiles/.p10k.zsh ~/.p10k.zsh
       - cp -r ./dotfiles/.zshrc ~/.zshrc
       - cp -r ./dotfiles/.linuxify ~/.linuxify
+      - |
+        cp ./dotfiles/.gitignore_global ~/.gitignore_global
+        git config --global core.excludesfile ~/.gitignore_global
       - rsync -rva ./dotfiles/nvim/ ~/.config/nvim/
       - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" || true
       - |

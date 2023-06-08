@@ -96,3 +96,4 @@ cask "utm"
 brew "direnv"
 cask "1password/tap/1password-cli"
 brew "postgresql@14"
+brew ansible
