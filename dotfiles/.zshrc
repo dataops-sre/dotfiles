@@ -131,4 +131,5 @@ export PATH=~/.bin:$PATH
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 export GODEBUG=asyncpreemptoff=1
 export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+export EDITOR=vim
 
