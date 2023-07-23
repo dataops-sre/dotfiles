@@ -8,6 +8,8 @@ tap "instrumenta/instrumenta" #for kubeval
 tap "kwilczynski/pkenv"
 tap "romkatv/powerlevel10k"
 tap "1password/tap"
+tap "peak/tap/s5cmd"
+
 #Linux tooling
 brew "python@3.11"
 brew "bash"
@@ -97,3 +99,4 @@ brew "direnv"
 cask "1password/tap/1password-cli"
 brew "postgresql@14"
 brew "ansible"
+brew "peak/tap/s5cmd"
